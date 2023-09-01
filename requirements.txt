@@ -1,0 +1,17 @@
+autocorrect-py
+flask
+nltk
+openai
+pyttsx3
+PyAudio
+pywhatkit
+requests
+speechrecognition
+spotipy
+spacy
+tensorflow
+wikipedia
+scikit-learn
+joblib
+pickle5
+nltk

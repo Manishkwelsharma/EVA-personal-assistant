@@ -1,0 +1,226 @@
+/* Reset some default styles */
+html, body, div, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Global styles */
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Navbar styles */
+  .navbar {
+    background-color: #111111;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    position: sticky;
+    justify-content: space-between;
+    top: 0; /* Stick to the top */
+    z-index: 1000; /* Ensure it's above other content */
+    transition: top 0.3s; /* Add smooth transition */
+  }
+  
+  .navbar-brand img {
+    width: 135px;
+    height: auto;
+  }
+  
+  .navbar-toggler {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  .navbar-toggler-icon {
+    display: block;
+    width: 20px;
+    height: 2px;
+
+  }
+  
+  .navbar-collapse {
+    flex-grow: 1;
+  }
+  
+  .navbar-nav {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    justify-content: flex-end;
+  }
+  
+
+  
+  /* Sidebar styles */
+.sidebar {
+    position: sticky;
+    height: calc(100% - 72px);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 13%;
+    z-index: 100;
+    padding: 60px 20px;
+    background-color: #000000;
+    color: #ffffff;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+  }
+  
+  .sidebar .side-item {
+    margin: 0 0 70px;
+
+  }
+  
+  .side-item {
+    margin: 0 10px;
+  }
+
+ /* Separator line styles for side bar */
+.side-link {
+    position: relative;
+    display: block;
+    padding: 8px 20px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: background-color 0.5s ease, color 0.5s ease;
+  }
+  
+  .side-link::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -2px; /* Adjust as needed */
+    height: 100%;
+    width: 5px;
+    background-color: transparent;
+    border-radius: 10px; /* Curved appearance */
+    transition: background-color 0.5s ease;
+    z-index: -1;
+
+  }
+  
+  .side-link:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Glassy effect */
+    color: #ff9900;
+  }
+
+  .side-link:hover::before {
+    background-color: #ff9900;
+  }
+
+    
+
+
+/* styling nav content bar*/
+
+/* Styles for "Profile," "Settings," and "Logout" links */
+
+.navbar-nav ml-auto {
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .nav-item {
+    list-style: none;
+    margin: 0 10px;
+    transition: 0.5s;
+  }
+  
+  .nav-link {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    padding: 8px 20px;
+    font-family: sans-serif;
+    color: #fff;
+    transition: 0.5s;
+  }
+  
+  .navbar-nav ml-auto:hover .nav-link {
+    transform: scale(1.5);
+    opacity: 0.2;
+    filter: blur(5px);
+  }
+  
+  .nav-item .nav-link:hover {
+    transform: scale(2);
+    opacity: 1;
+    filter: blur(0);
+    text-decoration: none;
+    color: white;
+  }
+  
+  .nav-item .nav-link:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 5px;
+    width: 90%;
+    height: 10%;
+    background: #fccb06; /*#cc899c*/
+    transition: 0.5s;
+    transform-origin: right;
+    transform: scaleX(0);
+    z-index: -1;
+  }
+  
+  .nav-item .nav-link:hover:before {
+    transition: transform 0.5s;
+    transform-origin: top left;
+    transform: scaleX(1);
+  }
+  
+
+
+
+/* Main content styles */
+.main-content {
+ margin-left: 200px;
+ padding: 20px;
+}
+
+ 
+
+/* chat button */
+
+/* Add these styles to your existing CSS or styles.css file */
+
+/* Input container styles */
+.input-container {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* User input field styles */
+#userInput {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Send button styles */
+#sendBtn {
+  background-color: #ff9900;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#sendBtn:hover {
+  background-color: #cc7700;
+}

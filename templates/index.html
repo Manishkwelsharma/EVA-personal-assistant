@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/static/styles.css">
+  <script src="/static/scripts.js"></script>
+  <title>Dashboard Template</title>
+</head>
+<body>
+  <nav class="navbar">
+    <a class="navbar-brand"><img src="evatouch.png" style="width: 135px; height: auto;"></a>
+    <button class="navbar-toggler" type="button" id="navbarToggleBtn">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Profile</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Settings</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Logout</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <nav class="sidebar col-md-2">
+        <div class="position-sticky">
+          <ul class="nav flex-column">
+            <li class="side-item">
+              <a class="side-link active" href="#">Dashboard</a>
+            </li>
+            <li class="side-item">
+              <a class="side-link" href="#">Analytics</a>
+            </li>
+            <li class="side-item">
+              <a class="side-link" href="#">Music Stats</a>
+            </li>
+            <li class="side-item">
+              <a class="side-link" href="#">Search Results</a>
+            </li>
+            <li class="side-item">
+              <a class="side-link" href="#">Diet Tracker</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <main class="main-content col-md-10">
+        <!--Content goes here -->
+        <div class="chat-container">
+          <div id="chat">
+              <!-- Chat messages will be displayed here -->
+          </div>
+          <div class="input-container">
+              <input type="text" id="userInput" placeholder="Type your message...">
+              <button id="sendBtn">Send</button>
+          </div>
+      </div>
+      </main>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    document.getElementById("navbarToggleBtn").addEventListener("click", function() {
+      document.getElementById("navbarNav").classList.toggle("active");
+    });
+  </script>
+</body>
+</html>
